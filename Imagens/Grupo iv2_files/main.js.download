@@ -1,0 +1,32 @@
+$(function() {
+  let offset = 500;
+  let duration = 200;
+  let $this = $(this);
+  let $backToTop = $(".back-to-top");
+  let $btContact = $("ul:not(.side-nav) li.bt-contact");
+
+  $(".button-collapse").sideNav({
+    closeOnClick: true
+  });
+
+  $(".parallax").parallax();
+
+  $(".scrollspy").scrollSpy({
+    scrollOffset: 30,
+    activeClass: "active"
+  });
+
+  $(window).bind("scroll load", function() {
+    $backToTop.attr(
+      "style",
+      $this.scrollTop() > offset ? "bottom: 22px;" : "bottom: -56px;"
+    );
+    $btContact.attr(
+      "style",
+      $this.scrollTop() > offset ? "width: 207px;" : "width: 0;"
+    );
+  });
+
+  // ano de copy right
+  $("#currentYear").text(new Date().getFullYear());
+});

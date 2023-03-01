@@ -1,0 +1,16 @@
+{
+  "name": "test-node",
+  "version": "1.0.0",
+  "description": "cursonode",
+  "main": "testnode.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \\\"erro:no test specified\\\" && exit 1"
+  },
+  "author": "Jose",
+  "license": "ISC"
+}

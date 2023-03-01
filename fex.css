@@ -1,0 +1,76 @@
+/*
+header,section,nav,footer,div{
+    display: flex;
+}
+header{
+    height: 150px;
+}
+nav{
+    background: red;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+a{
+   width: 100px;
+   height: 70px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+section{
+   flex-wrap: wrap;
+   justify-content: center;
+}
+div{
+    border: 1px solid #000;
+    flex: 1;
+    min-width: 200px;
+    max-width: 200px;
+    margin: 5px;
+    max-height: 100px;
+    min-height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+#div1{order: 1;}
+#div2{order: 3;}
+#div3{order: 2;}
+#div4{order: 3;}
+#div5{order: 5;}
+#div6{order: 6;}
+#div7{order: 7;}
+#div8{order: 8;}
+#div9{order: 9;}
+#div10{order: 10;}
+*/
+
+.d1{
+    width: 800px;
+    height: 500px;
+    background-color: rgb(208, 255, 0);
+     padding: 50px;
+}
+.dd1{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    margin: 20px;
+    float: left;
+  
+}
+.d2{
+    background-image: url(imagens/unimed.png);
+    width: 294px;
+    height: 171px;
+}
+
+
+
+footer{
+    background:#ccc;
+    justify-content: center;
+    align-items: center;
+}
